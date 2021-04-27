@@ -13,6 +13,12 @@ $(function () {
         fade:true,
         autoplay:true
     });
+    $('.contact-slider').slick({
+        dots:true,
+        arrows:false,
+        slidesToShow:10,
+        slidesToScroll:10
+    });
 
 })
 
