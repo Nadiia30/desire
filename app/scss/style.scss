@@ -17,6 +17,9 @@
     padding: 0;
     cursor: pointer;
   }
+  &__btn-menu {
+    display: none;
+  }
 }
 .logo {
   margin: 0 auto;
@@ -233,11 +236,15 @@
   z-index: 10;
   &__list {
     display: flex;
+    overflow-x: auto;
+  }
+  &__item {
+    position: relative;
+    padding-right: 8px;
   }
   &__item::after {
+    position: absolute;
     content: "/";
-    margin-left: -3px;
-    margin-right: 4px;
   }
   &__item:last-child::after {
     display: none;
@@ -712,6 +719,9 @@
 
 .map {
   margin: -53px 0 50px;
+  iframe {
+    height: 578px;
+  }
 }
 
 .contact {
@@ -1213,3 +1223,5 @@
     cursor: pointer;
   }
 }
+
+@import "media";
